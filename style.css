@@ -1,0 +1,196 @@
+header{
+    margin: 0;
+    padding: 0;
+}
+/*disposition de l'image*/
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40px;
+}
+/*rediction de la taille de L'image */
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.navbar{
+    display: flex;
+    justify-content:;
+    background-color: rgb(29, 50, 134);
+    padding: 10px 8px;
+    align-items: center;
+}
+/*disposition des liens*/
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    text-align: center;
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*suppression de ligne et couleur*/
+.navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+}
+/*animation de l'image*/
+.navbar a:hover{
+    border: 2px rgb(121, 117, 117) solid;
+    border-radius: 3px;
+    padding: 3px 4px;
+
+}
+
+.tete{
+    text-align: center;
+    margin-top: 18%;
+    color:cornflowerblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tete p{
+    font-size: 23px;
+}
+
+.btn a{
+    border: 2px solid;
+    font-size: 25px;
+    padding: 4px 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+}
+.btn a:hover{
+    border: 2px solid rgb(58, 57, 57);
+    /*background-color: azure;*/
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #030303;
+}
+
+form section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.field, .field-inline {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.field input,
+.field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.field-inline {
+    display: flex;
+    gap: 15px;
+}
+
+.field-inline > div {
+    flex: 1;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #2a4d8f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b3461;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+@media (max-width: 768px) {
+    .field-inline {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+body{
+ background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 750px;
+  border-radius: 10px;
+  animation: changeImageAccueil 10s infinite;
+}
+@keyframes changeImageAccueil {
+  0%{background-image: url(./image/recteur.jpg);}
+  33%{background-image: url(./image/les\ professeurs.jpg);}
+  66%{background-image: url(./image/les\ étudiants.jpg);}
+  100%{background-image: url(./image/UPC.jpg);}
+}

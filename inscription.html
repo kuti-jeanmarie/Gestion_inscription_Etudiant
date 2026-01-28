@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Inscription 2025-2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="./image/logo.png" alt="logo"></div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+<div class="container">
+    <div class="logo"><img src="./image/logo.png" alt="logo"></div>
+    <h1 style="color: black;">Inscription en ligne 2025-2026</h1>
+    <form>
+        <!-- Informations Personnelles -->
+
+        <section>
+            <h2>Informations Personnelles</h2>
+            <div class="field">
+                <label>Nom du candidat</label>
+                <input type="text" name="nom" required>
+            </div>
+            <div class="field">
+                <label>Post nom</label>
+                <input type="text" name="postnom" required>
+            </div>
+            <div class="field">
+                <label>Prénom</label>
+                <input type="text" name="prenom" required>
+            </div>
+            <div class="field-inline">
+                <div>
+                    <label>Sexe</label>
+                    <select name="sexe">
+                        <option value="">--Sélectionnez--</option>
+                        <option value="M">M</option>
+                        <option value="F">F</option>
+                    </select>
+                </div>
+                <div>
+                    <label>État civil</label>
+                    <select name="etatcivil">
+                        <option value="">--Sélectionnez--</option>
+                        <option value="marie">Marié(e)</option>
+                        <option value="celibataire">Célibataire</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <label>Photo passeport (max 5 Mb)</label>
+                <input type="file" name="photo">
+            </div>
+            <div class="field">
+                <label>Lieu de naissance</label>
+                <input type="text" name="lieunaissance">
+            </div>
+            <div class="field">
+                <label>Date de naissance</label>
+                <input type="date" name="datenaissance">
+            </div>
+            <div class="field">
+                <label>Nationalité</label>
+                <select name="nationalite">
+                    <option value="">--Sélectionnez--</option>
+                    <option value="RDC">République Démocratique du Congo</option>
+                    <option value="Congo">République du Congo</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Benin">Bénin</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Adresses & Coordonnées -->
+        <section>
+            <h2>Adresses et Coordonnées</h2>
+            <div class="field">
+                <label>Province d'origine</label>
+                <input type="text" name="province">
+            </div>
+            <div class="field">
+                <label>Territoire / District</label>
+                <input type="text" name="territoire">
+            </div>
+            <div class="field">
+                <label>Secteur</label>
+                <input type="text" name="secteur">
+            </div>
+            <div class="field">
+                <label>Numéro de téléphone</label>
+                <input type="tel" name="telephone" placeholder="+243XXXXXXXXX">
+            </div>
+            <div class="field">
+                <label>Commune</label>
+                <input type="text" name="commune">
+            </div>
+            <div class="field">
+                <label>Adresse complète</label>
+                <input type="text" name="adresse">
+            </div>
+        </section>
+
+        <!-- Choix des Facultés -->
+        <section>
+            <h2>Choix des Facultés</h2>
+            <div class="field">
+                <label>Premier choix - Faculté</label>
+                <select name="faculte1">
+                    <option value="">--Sélectionnez--</option>
+                    <option>Théologie</option>
+                    <option>Droit</option>
+                    <option>Sciences Économiques</option>
+                    <option>Médecine</option>
+                    <option>Sciences informatique</option>
+                    <!-- autres options -->
+                </select>
+            </div>
+            <div class="field">
+                <label>Premier choix - Département</label>
+                <input type="text" name="dept1">
+            </div>
+            <div class="field">
+                <label>Deuxième choix - Faculté</label>
+                <select name="faculte2">
+                    <option value="">--Sélectionnez--</option>
+                    <option>Théologie</option>
+                    <option>Droit</option>
+                    <option>Sciences Économiques</option>
+                    <option>Médecine</option>
+                    <option>Sciences informatiques</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Deuxième choix - Département</label>
+                <input type="text" name="dept2">
+            </div>
+        </section>
+
+        <!-- Profil étudiant -->
+        <section>
+            <h2>Profil Étudiant</h2>
+            <div class="field">
+                <label>Adresse e-mail</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="field">
+                <label>Mot de passe</label>
+                <input type="password" name="password" minlength="8" required>
+            </div>
+            <div class="field">
+                <label>Confirmer mot de passe</label>
+                <input type="password" name="confirm_password" minlength="8" required>
+            </div>
+        </section>
+
+        <button type="submit">Soumettre</button>
+    </form>
+</div>
+</body>
+</html>
