@@ -14,6 +14,10 @@ header{
     height: 60px;
 }
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content:;
     background-color: rgb(29, 50, 134);
@@ -193,4 +197,7 @@ body{
   33%{background-image: url(./image/les\ professeurs.jpg);}
   66%{background-image: url(./image/les\ étudiants.jpg);}
   100%{background-image: url(./image/UPC.jpg);}
+}
+.container{
+    margin-top: 80px;
 }
