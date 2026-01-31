@@ -53,11 +53,15 @@ header{
     margin-top: 18%;
     color:cornflowerblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30%;
 }
 .tete p{
     font-size: 23px;
 }
 
+/*.tete h1, h2, h3 {
+    margin-top: 90px;
+}*/
 .btn a{
     border: 2px solid;
     font-size: 25px;
